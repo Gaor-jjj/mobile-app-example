@@ -8,7 +8,9 @@ SplashScreen.preventAutoHideAsync();
 const RootLayout = () => {
   const [fontsLoaded, error] = useFonts({
     "DMSans-Regular": require("../assets/fonts/DMSans-Regular.ttf"),
-    "DMSans-SemiBold": require("../assets/fonts/DMSans-SemiBold.ttf")
+    "DMSans-SemiBold": require("../assets/fonts/DMSans-SemiBold.ttf"),
+    "Montserrat-Regular": require("../assets/fonts/Montserrat-Regular.ttf"),
+    "Montserrat-Bold": require("../assets/fonts/Montserrat-Bold.ttf")
   });
 
   useEffect(() => {

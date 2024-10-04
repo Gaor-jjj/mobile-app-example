@@ -16,17 +16,19 @@ export default function App() {
             />
             <View className="items-center justify-center w-full">
                 <Text className="font-dmsemibold text-[40px]">You'll Find</Text>
-                <Text className="font-dmsemibold text-[40px] text-[#FCA34D] underline">All you need</Text>
+                <Text className="font-dmsemibold text-[40px] text-accent underline">All you need</Text>
                 <Text className="font-dmsemibold text-[40px]">Here!</Text>
                 <CustomButton
                     title='Sign Up'
                     handlePress={() => router.push()}
                     containerStyles='w-full mt-10'
+                    textStyles='font-mbold'
                 />
                 <CustomButton
                     title='Sign In'
                     handlePress={() => router.push()}
-                    containerStyles='w-full mt-4'
+                    containerStyles='w-full mt-4 bg-secondary'
+                    textStyles='font-mbold'
                 />
             </View>
         </View>
