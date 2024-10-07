@@ -1,5 +1,4 @@
 import { View, Text, ScrollView } from 'react-native'
-import React, { useState } from 'react'
 import AuthHeader from '../../components/AuthHeader'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { router } from 'expo-router'
@@ -9,8 +8,6 @@ import Seperator from '../../components/Seperator'
 import GoogleLogin from '../../components/GoogleLogin'
 
 const SignUp = () => {
-    const [checked, setChecked] = useState(false)
-
   return (
     <SafeAreaView className="h-full bg-white">
         <ScrollView>
