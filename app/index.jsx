@@ -26,7 +26,7 @@ export default function App() {
                 />
                 <CustomButton
                     title='Sign In'
-                    handlePress={() => router.push()}
+                    handlePress={() => router.push('/sign-in')}
                     containerStyles='w-full mt-4 bg-secondary'
                     textStyles='font-mbold'
                 />
