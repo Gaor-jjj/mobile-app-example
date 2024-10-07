@@ -7,6 +7,7 @@ import InputField from '../../components/InputField'
 import Checkbox from '../../components/Checkbox'
 import CustomButton from '../../components/CustomButton'
 import Seperator from '../../components/Seperator'
+import GoogleLogin from '../../components/GoogleLogin'
 
 const SignUp = () => {
     const [checked, setChecked] = useState(false)
@@ -43,6 +44,7 @@ const SignUp = () => {
                 containerStyles='mt-5'
             />
             <Seperator text='Or sign up with'/>
+            <GoogleLogin/>
         </View>
     </SafeAreaView>
   )
