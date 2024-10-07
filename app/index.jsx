@@ -8,7 +8,7 @@ import CustomButton from '../components/CustomButton';
 export default function App() {
   return (
     <SafeAreaView className="h-full bg-white">
-        <View className="w-full items-center justify-center h-full px-5">
+        <View className="w-full items-center justify-center h-full p-5">
             <Image
                 source={images.splash_image}
                 className='w-full h-[200px]'
@@ -32,7 +32,7 @@ export default function App() {
                 />
             </View>
         </View>
-        <StatusBar style="auto"></StatusBar>
+        <StatusBar style="dark"></StatusBar>
     </SafeAreaView>
   )
 }

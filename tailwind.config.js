@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         primary: '#4F63AC',
         secondary: '#3F4A59',
-        accent: '#FCA34D'
+        accent: '#FCA34D',
+        gray: '#8D9BB5'
       },
       fontFamily: {
         dmregular: ["DMSans-Regular", "sans-serif"],

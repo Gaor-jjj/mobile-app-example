@@ -18,7 +18,7 @@ const AuthLayout = () => {
                 }}
             />
         </Stack>
-        <StatusBar style='auto'/>
+        <StatusBar style="dark"/>
     </>
   )
 }
