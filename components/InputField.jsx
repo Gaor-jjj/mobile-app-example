@@ -11,7 +11,7 @@ const InputField = ({label, placeholder, isPassword}) => {
 
     return (
         <View className="mb-[20px]">
-            <Text className="mb-2 text-primary font-mregular">{label}</Text>
+            <Text className="mb-2 text-primary font-mmedium">{label}</Text>
             <View className="border border-gray rounded-lg flex-row items-center">
                 <TextInput
                 className="px-[16px] py-[20px] flex-1"

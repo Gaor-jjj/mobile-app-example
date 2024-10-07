@@ -10,6 +10,7 @@ const RootLayout = () => {
     "DMSans-Regular": require("../assets/fonts/DMSans-Regular.ttf"),
     "DMSans-SemiBold": require("../assets/fonts/DMSans-SemiBold.ttf"),
     "Montserrat-Regular": require("../assets/fonts/Montserrat-Regular.ttf"),
+    "Montserrat-Medium": require("../assets/fonts/Montserrat-Medium.ttf"),
     "Montserrat-Bold": require("../assets/fonts/Montserrat-Bold.ttf")
   });
 

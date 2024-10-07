@@ -13,6 +13,7 @@ module.exports = {
         dmregular: ["DMSans-Regular", "sans-serif"],
         dmsemibold: ["DMSans-SemiBold", "sans-serif"],
         mregular: ["Montserrat-Regular", "sans-serif"],
+        mmedium: ["Montserrat-Medium", "sans-serif"],
         mbold: ["Montserrat-Bold", "sans-serif"]
       }
     },
