@@ -7,7 +7,8 @@ module.exports = {
         primary: '#4F63AC',
         secondary: '#3F4A59',
         accent: '#FCA34D',
-        gray: '#8D9BB5'
+        gray: '#8D9BB5',
+        lgray: '#DADADA'
       },
       fontFamily: {
         dmregular: ["DMSans-Regular", "sans-serif"],

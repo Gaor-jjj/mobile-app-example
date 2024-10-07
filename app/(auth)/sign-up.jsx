@@ -5,6 +5,8 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import { router } from 'expo-router'
 import InputField from '../../components/InputField'
 import Checkbox from '../../components/Checkbox'
+import CustomButton from '../../components/CustomButton'
+import Seperator from '../../components/Seperator'
 
 const SignUp = () => {
     const [checked, setChecked] = useState(false)
@@ -35,6 +37,12 @@ const SignUp = () => {
                 <Checkbox checked={checked} onCheck={setChecked}/>
                 <Text className="text-primary mx-3">I agree with <Text className="font-mbold">Terms & Privacy</Text></Text>
             </View>
+            <CustomButton
+                title='Sign In'
+                handlePress={() => router.push('/')}
+                containerStyles='mt-5'
+            />
+            <Seperator text='Or sign up with'/>
         </View>
     </SafeAreaView>
   )
