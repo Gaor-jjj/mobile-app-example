@@ -45,7 +45,7 @@ const SignUp = () => {
                     containerStyles='my-5'
                 />
                 <Seperator text='Or sign up with'/>
-                <GoogleLogin/>
+                <GoogleLogin handlePress={() => router.push('/home')}/>
                 <Text className="font-mregular text-primary text-center mt-10 pb-5">Already have an account? <Text className="font-mbold" onPress={() => router.push('sign-in')}>Sign In</Text></Text>
             </View>
         </ScrollView>

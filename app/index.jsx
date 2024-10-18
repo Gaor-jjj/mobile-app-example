@@ -1,13 +1,12 @@
 import { Image, Text, View } from 'react-native';
 import { router } from 'expo-router'
-import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { images } from '../constants'
 import CustomButton from '../components/CustomButton';
 
 export default function App() {
   return (
-    <SafeAreaView className="h-full bg-white">
+    <SafeAreaView className="bg-white">
         <View className="w-full items-center justify-center h-full p-5">
             <Image
                 source={images.splash_image}
@@ -32,7 +31,6 @@ export default function App() {
                 />
             </View>
         </View>
-        <StatusBar style="dark"></StatusBar>
     </SafeAreaView>
   )
 }
