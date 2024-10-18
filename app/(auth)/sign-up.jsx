@@ -19,7 +19,7 @@ const SignUp = () => {
                 <AuthHeader
                     title='Sign Up'
                     textStyles='font-mbold text-[26px]'
-                    handlePress={() => router.back()}
+                    handlePress={() => router.push('/')}
                     containerStyles="mb-10"
                 />
                 <InputField
@@ -45,8 +45,8 @@ const SignUp = () => {
                     containerStyles='my-5'
                 />
                 <Seperator text='Or sign up with'/>
-                <GoogleLogin/>
-                <Text className="font-mregular text-primary text-center mt-10 pb-5">Already have an account? <Text className="font-mbold">Sign In</Text></Text>
+                <GoogleLogin handlePress={() => router.push('/home')}/>
+                <Text className="font-mregular text-primary text-center mt-10 pb-5">Already have an account? <Text className="font-mbold" onPress={() => router.push('sign-in')}>Sign In</Text></Text>
             </View>
         </ScrollView>
     </SafeAreaView>
