@@ -9,6 +9,9 @@ import favourites from '../assets/icons/favourites.png'
 import favourites_focus from '../assets/icons/favourites_focus.png'
 import profile from '../assets/icons/profile.png'
 import profile_focus from '../assets/icons/profile_focus.png'
+import back_simple from '../assets/icons/back_simple.png'
+import logout from '../assets/icons/logout.png'
+import search from '../assets/icons/search.png'
 
 export default {
     back,
@@ -21,5 +24,8 @@ export default {
     favourites,
     favourites_focus,
     profile,
-    profile_focus
+    profile_focus,
+    back_simple,
+    logout,
+    search
 }
