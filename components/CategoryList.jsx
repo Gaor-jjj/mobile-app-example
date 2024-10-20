@@ -1,15 +1,6 @@
 import { View, Text, FlatList, TouchableOpacity, Image } from 'react-native'
 import React, { useState } from 'react'
-import icons from '../constants/icons'
-
-const categories = [
-  { name: 'Popular', icon: icons.star },
-  { name: 'Chair', icon: icons.chair },
-  { name: 'Table', icon: icons.table },
-  { name: 'Armchair', icon: icons.armchair },
-  { name: 'Bed', icon: icons.bed },
-  { name: 'Lamp', icon: icons.lamp },
-]
+import categories from '../data/categories'
 
 const CategoryList = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -40,7 +31,7 @@ const CategoryList = () => {
 
 
   return (
-    <View>
+    <View className="w-full">
       <FlatList
         data={categories}
         renderItem={renderItem}
