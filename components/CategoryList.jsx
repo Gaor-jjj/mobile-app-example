@@ -2,16 +2,15 @@ import { View, Text, FlatList, TouchableOpacity, Image } from 'react-native'
 import React, { useState } from 'react'
 import categories from '../data/categories'
 
-const CategoryList = () => {
-  const [selectedCategory, setSelectedCategory] = useState(null);
+const CategoryList = ({ selectedCategory, setSelectedCategory }) => {
 
   const renderItem = ({ item }) => {
-    const isSelected = selectedCategory === item.name;
-
+    const isSelected = selectedCategory === item.id;
+    
     return (
         <TouchableOpacity
             className="items-center my-4 mr-4"
-            onPress={() => setSelectedCategory(item.name)}
+            onPress={() => setSelectedCategory(item.id)}
         >
             {/* Square Icon Background */}
             <View className={`w-14 h-14 justify-center items-center mb-1 rounded-lg ${isSelected ? 'bg-gray' : 'bg-gray-200'}`}>

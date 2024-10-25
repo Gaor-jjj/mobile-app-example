@@ -1,5 +1,5 @@
 import { View, FlatList } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import Header from '../../components/Header'
 import CategoryList from '../../components/CategoryList'
@@ -7,6 +7,11 @@ import products from '../../data/products'
 import ProductHomeItem from '../../components/ProductHomeItem'
 
 const home = () => {
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
+  const filteredProducts = selectedCategory
+    ? products.filter(product => product.category === selectedCategory)
+    : products;
   const renderProductItem = ({item}) => {
     return (
       <ProductHomeItem
@@ -24,9 +29,9 @@ const home = () => {
           showSearch
           title='Find All You Need'
         />
-        <CategoryList/>
+        <CategoryList selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
         <FlatList
-          data={products}
+          data={filteredProducts}
           renderItem={renderProductItem}
           keyExtractor={(item) => String(item.id)}
           numColumns={2}
