@@ -18,8 +18,8 @@ const home = () => {
   }
 
   return (
-    <SafeAreaView className="bg-white flex-1">
-      <View className="w-full h-full flex-1 items-center p-5">
+    <SafeAreaView className="bg-white flex-1" edges={['top']}>
+      <View className="flex-1 mx-5 mt-5">
         <Header
           showSearch
           title='Find All You Need'
@@ -29,6 +29,9 @@ const home = () => {
           data={products}
           renderItem={renderProductItem}
           keyExtractor={(item) => String(item.id)}
+          numColumns={2}
+          columnWrapperStyle={{ justifyContent: 'space-between' }}
+          showsVerticalScrollIndicator={false}
         />
       </View>
     </SafeAreaView>

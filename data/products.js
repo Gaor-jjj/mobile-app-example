@@ -2,14 +2,14 @@ const products = [
     {
         id: 1,
         title: 'Loft Style Chair',
-        image: 'https://grandrapidschair.com/wp-content/uploads/2016/01/250_Brady_Graphite_Honey-1.jpg',
+        image: 'https://images.unsplash.com/photo-1571898223382-0aa3499f0f2a?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         category: 1,
         price: '$ 20.00'
     },
     {
         id: 2,
         title: 'Wood Mini Table',
-        image: 'https://ii1.pepperfry.com/media/catalog/product/f/o/800x880/foldable-table-in-natural-colour-by-clasicraft-foldable-table-in-natural-colour-by-clasicraft-ahmtub.jpg',
+        image: 'https://images.unsplash.com/photo-1693761935192-e46c76d189cb?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         category: 2,
         price: '$ 25.00'
     },
