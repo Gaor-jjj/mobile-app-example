@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import icons from '../constants/icons'
 import InputField from './InputField'
 
-const Header = ({ title, showBack, showLogout, showSearch, onBackPress, onLogoutPress }) => {
+const Header = ({ title, showBack, showLogout, showSearch, onBackPress, onLogoutPress, onSearchKeyword, keyword }) => {
   const [showSearchInput, setShowSearchInput] = useState(false)
   const toggleSearch = () => {
     setShowSearchInput(!showSearchInput);
@@ -40,7 +40,7 @@ const Header = ({ title, showBack, showLogout, showSearch, onBackPress, onLogout
       </View>
       {showSearchInput && (
         <View className="mt-2">
-          <InputField placeholder={`Type your keyword`}/>
+          <InputField onChangeText={onSearchKeyword} value={keyword} placeholder={`Type your keyword`}/>
         </View>
       )}
     </View>
