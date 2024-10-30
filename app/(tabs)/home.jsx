@@ -8,12 +8,14 @@ import ProductHomeItem from '../../components/ProductHomeItem'
 
 const home = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [keyword, setKeyword] = useState(null)
+  const [keyword, setKeyword] = useState(null);
 
-  const filteredProducts = selectedCategory
-    ? products.filter(product => product.category === selectedCategory)
-    : products;
-
+  const filteredProducts = products.filter(product => {
+    const matchesCategory = selectedCategory ? product.category === parseInt(selectedCategory) : true;
+    const matchesKeyword = keyword ? product.title.toLowerCase().includes(keyword.toLowerCase()) : true;
+    return matchesCategory && matchesKeyword;
+  });
+  
   const renderProductItem = ({item}) => {
     return (
       <ProductHomeItem
