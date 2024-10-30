@@ -11,7 +11,9 @@ const RootLayout = () => {
     "DMSans-SemiBold": require("../assets/fonts/DMSans-SemiBold.ttf"),
     "Montserrat-Regular": require("../assets/fonts/Montserrat-Regular.ttf"),
     "Montserrat-Medium": require("../assets/fonts/Montserrat-Medium.ttf"),
-    "Montserrat-Bold": require("../assets/fonts/Montserrat-Bold.ttf")
+    "Montserrat-Bold": require("../assets/fonts/Montserrat-Bold.ttf"),
+    "NunitoSans-Regular": require("../assets/fonts/NunitoSans-Regular.ttf"),
+    "NunitoSans-Bold": require("../assets/fonts/NunitoSans-Bold.ttf")
   });
 
   useEffect(() => {

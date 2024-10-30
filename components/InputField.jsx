@@ -2,7 +2,7 @@ import { View, Text, TextInput, Pressable, Image } from 'react-native'
 import React, { useState } from 'react'
 import icons from '../constants/icons'
 
-const InputField = ({label, placeholder, isPassword}) => {
+const InputField = ({ label, placeholder, isPassword, value, onChangeText }) => {
     const [isPasswordVisible, setIsPasswordVisible] = useState(false)
 
     const onEyePress = () => {
@@ -18,6 +18,8 @@ const InputField = ({label, placeholder, isPassword}) => {
                 placeholder={placeholder}
                 placeholderTextColor="#C5C5C5"
                 secureTextEntry={isPassword && !isPasswordVisible}
+                value={value}
+                onChangeText={onChangeText}
                 />
                 {
                     isPassword ? (
