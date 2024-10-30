@@ -18,6 +18,7 @@ import chair from '../assets/icons/chair.png'
 import lamp from '../assets/icons/lamp.png'
 import star from '../assets/icons/star.png'
 import table from '../assets/icons/table.png'
+import remove from '../assets/icons/remove.png'
 
 export default {
     back,
@@ -39,5 +40,6 @@ export default {
     chair,
     lamp,
     star,
-    table
+    table,
+    remove
 }

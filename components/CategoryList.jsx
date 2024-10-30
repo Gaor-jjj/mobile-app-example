@@ -13,7 +13,7 @@ const CategoryList = ({ selectedCategory, setSelectedCategory }) => {
             onPress={() => setSelectedCategory(item.id)}
         >
             {/* Square Icon Background */}
-            <View className={`w-14 h-14 justify-center items-center mb-1 rounded-lg ${isSelected ? 'bg-gray' : 'bg-gray-200'}`}>
+            <View className={`w-12 h-12 justify-center items-center mb-1 rounded-lg ${isSelected ? 'bg-gray' : 'bg-gray-200'}`}>
                 <Image
                     source={item.icon}
                     className="w-6 h-6"
@@ -27,7 +27,6 @@ const CategoryList = ({ selectedCategory, setSelectedCategory }) => {
         </TouchableOpacity>
     );
   };
-
 
   return (
     <View className="w-full">
