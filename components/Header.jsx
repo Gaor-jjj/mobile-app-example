@@ -10,7 +10,7 @@ const Header = ({ title, showBack, showLogout, showSearch, onBackPress, onLogout
   }
 
   return (
-    <View className="w-full h-6">
+    <View className="w-full">
       <View className="flex-row items-center justify-between">
 
         {/* Left Side: Either Back or Search */}    

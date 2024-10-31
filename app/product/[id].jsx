@@ -1,17 +1,22 @@
-import { View, Text } from 'react-native';
-import { useRouter, useLocalSearchParams } from 'expo-router';
+import { View, Text, Image } from 'react-native';
+import React from 'react';
+import { useLocalSearchParams } from 'expo-router';
 
 const ProductDetails = () => {
-    const router = useRouter(); // Initialize the router
-    const params = useLocalSearchParams(); // Use the useSearchParams hook to get URL params
-    const { id } = params; // Extract the ID from the params
+  const { title, image, price, description } = useLocalSearchParams();
 
-    return (
-        <View>
-            <Text>Product ID: {id}</Text>
-            {/* Here you can fetch and display product details based on the ID */}
-        </View>
-    );
-}
+  return (
+    <View className="flex-1 p-5 bg-white">
+      <Image
+        source={{ uri: image }}
+        className="w-full h-64 rounded-lg"
+        resizeMode="cover"
+      />
+      <Text className="mt-5 text-xl font-semibold">{title}</Text>
+      <Text className="mt-2 text-lg text-gray-600">{price}</Text>
+      <Text className="mt-4 text-sm text-gray-500">{description}</Text>
+    </View>
+  );
+};
 
 export default ProductDetails;

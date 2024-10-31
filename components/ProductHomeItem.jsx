@@ -1,7 +1,7 @@
 import { Text, Image, Pressable } from 'react-native'
 import React from 'react'
 
-const ProductHomeItem = ({ title, image, price, id, onPress }) => {
+const ProductHomeItem = ({ title, image, price, onPress }) => {
   return (
     <Pressable onPress={onPress} className="p-3 flex-1">
         <Image
