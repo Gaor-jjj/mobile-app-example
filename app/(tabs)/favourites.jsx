@@ -4,15 +4,21 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import Header from '../../components/Header'
 import products from '../../data/products'
 import ProductHomeItem from '../../components/ProductFavoriteItem'
+import { useRouter } from 'expo-router'
 
 const favorites = () => {
-  
+  const router = useRouter();
   const renderProductItem = ({item}) => {
     return (
       <ProductHomeItem
         title={item.title}
         image={item.image}
+        images={item.images}
         price={item.price}
+        onPress={() => router.push({
+          pathname: `/product/${item.id}`,
+          params: { title: item.title, image: item.image, price: item.price, description: item.description }
+        })}
       />
     )
   }

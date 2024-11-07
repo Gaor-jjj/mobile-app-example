@@ -16,7 +16,7 @@ const SignUp = () => {
                     title='Sign In'
                     textStyles='font-mbold text-[26px]'
                     handlePress={() => router.push('/')}
-                    containerStyles="mb-10"
+                    containerStyles="mb-8"
                 />
                 <InputField
                     label='Email'
@@ -34,7 +34,7 @@ const SignUp = () => {
                 />
                 <Seperator text='Or sign in with'/>
                 <GoogleLogin handlePress={() => router.push('/home')}/>
-                <Text className="font-mregular text-primary text-center mt-10 pb-5">Don't have an account? <Text className="font-mbold text-primary" onPress={() => router.push('sign-up')}>Sign Up</Text></Text>
+                <Text className="font-mregular text-primary text-center mt-5">Don't have an account? <Text className="font-mbold text-primary" onPress={() => router.push('sign-up')}>Sign Up</Text></Text>
             </View>
         </ScrollView>
     </SafeAreaView>

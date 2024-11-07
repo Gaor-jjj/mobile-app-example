@@ -23,10 +23,11 @@ const home = () => {
       <ProductHomeItem
         title={item.title}
         image={item.image}
+        images={item.images}
         price={item.price}
         onPress={() => router.push({
           pathname: `/product/${item.id}`,
-          params: { title: item.title, image: item.image, price: item.price, description: item.description }
+          params: { title: item.title, image: item.image, price: item.price, description: item.description, images: item.images }
         })}
       />
     )
