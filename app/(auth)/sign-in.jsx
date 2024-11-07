@@ -29,7 +29,7 @@ const SignUp = () => {
                 />
                 <CustomButton
                     title='Sign In'
-                    handlePress={() => router.push('/')}
+                    handlePress={() => router.push('/home')}
                     containerStyles='my-5'
                 />
                 <Seperator text='Or sign in with'/>
