@@ -1,21 +1,28 @@
-import { View, Text, Image } from 'react-native';
 import React from 'react';
+import { View, Text, Image, SafeAreaView, ScrollView } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 
 const ProductDetails = () => {
   const { title, image, price, description } = useLocalSearchParams();
 
   return (
-    <View className="flex-1 p-5 bg-white">
-      <Image
-        source={{ uri: image }}
-        className="w-full h-64 rounded-lg"
-        resizeMode="cover"
-      />
-      <Text className="mt-5 text-xl font-semibold">{title}</Text>
-      <Text className="mt-2 text-lg text-gray-600">{price}</Text>
-      <Text className="mt-4 text-sm text-gray-500">{description}</Text>
-    </View>
+    <SafeAreaView className="flex-1 bg-white">
+      <View className="h-1/2">
+        <Image
+          source={{ uri: image }}
+          className="w-full h-full"
+          resizeMode="cover"
+        />
+      </View>
+
+      <View className="h-1/2 p-5">
+        <ScrollView>
+          <Text className="text-lg font-bold mb-2 text-gray-800">{title}</Text>
+          <Text className="text-md font-semibold text-gray-600 mb-4">{price}</Text>
+          <Text className="text-sm text-gray-700">{description}</Text>
+        </ScrollView>
+      </View>
+    </SafeAreaView>
   );
 };
 
