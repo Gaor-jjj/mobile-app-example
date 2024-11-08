@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import CustomButton from '../../components/CustomButton';
 import { icons } from '../../constants'
 import { useRouter } from 'expo-router';
+import { Linking } from 'react-native';
 
 const ProductDetails = () => {
   const router = useRouter();
@@ -33,6 +34,24 @@ const ProductDetails = () => {
     }
   };
 
+  const onContact = async () => {
+    const email = 'realemail@example.com';
+    const subject = 'Product Inquiry';
+    const body = 'Hello, I am interested in your product.'
+    const emailURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    try {
+      const canOpen = await Linking.canOpenURL(emailURL);
+      if (canOpen) {
+        await Linking.openURL(emailURL);
+      } else {
+        console.log('Email app is not available');
+      }
+    } catch (error) {
+      console.error('Error opening email app', error);
+    }
+  }
+
   return (
     <SafeAreaView className="flex-1 bg-white">
         <View className="flex-1">
@@ -49,11 +68,11 @@ const ProductDetails = () => {
                   onViewableItemsChanged={onViewableItemsChanged}
                   viewabilityConfig={{ itemVisiblePercentThreshold: 50 }}
                 />
-                <View className="flex-row justify-center absolute bottom-4 w-full">
+                <View className="flex-row justify-center absolute bottom-11 w-full">
                   {imagesArray.map((_, index) => (
                     <View
                       key={index}
-                      className={`w-2 h-2 rounded-full mx-1 ${
+                      className={`w-4 h-1 rounded-sm mx-1 ${
                         index === currentIndex ? 'bg-white' : 'bg-gray-300'
                       }`}
                     />
@@ -90,7 +109,7 @@ const ProductDetails = () => {
               </TouchableOpacity>
               <CustomButton
                 title="Contact Seller"
-                handlePress={() => {}}
+                handlePress={onContact}
                 containerStyles="flex-1 mt-auto bg-primary h-14"
                 textStyles="font-mbold"
               />
