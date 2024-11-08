@@ -20,7 +20,7 @@ const SignUp = () => {
                     title='Sign Up'
                     textStyles='font-mbold text-[26px]'
                     handlePress={() => router.push('/')}
-                    containerStyles="mb-10"
+                    containerStyles="mb-8"
                 />
                 <InputField
                     label='Name'
@@ -41,12 +41,12 @@ const SignUp = () => {
                 </View>
                 <CustomButton
                     title='Sign Up'
-                    handlePress={() => router.push('/')}
+                    handlePress={() => router.push('/home')}
                     containerStyles='my-5'
                 />
                 <Seperator text='Or sign up with'/>
                 <GoogleLogin handlePress={() => router.push('/home')}/>
-                <Text className="font-mregular text-primary text-center mt-10 pb-5">Already have an account? <Text className="font-mbold" onPress={() => router.push('sign-in')}>Sign In</Text></Text>
+                <Text className="font-mregular text-primary text-center mt-5">Already have an account? <Text className="font-mbold" onPress={() => router.push('sign-in')}>Sign In</Text></Text>
             </View>
         </ScrollView>
     </SafeAreaView>

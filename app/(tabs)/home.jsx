@@ -5,8 +5,10 @@ import Header from '../../components/Header'
 import CategoryList from '../../components/CategoryList'
 import products from '../../data/products'
 import ProductHomeItem from '../../components/ProductHomeItem'
+import { useRouter } from 'expo-router'
 
 const home = () => {
+  const router = useRouter();
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [keyword, setKeyword] = useState(null);
 
@@ -21,7 +23,12 @@ const home = () => {
       <ProductHomeItem
         title={item.title}
         image={item.image}
+        images={item.images}
         price={item.price}
+        onPress={() => router.push({
+          pathname: `/product/${item.id}`,
+          params: { title: item.title, image: item.image, price: item.price, description: item.description, images: item.images }
+        })}
       />
     )
   }
