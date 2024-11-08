@@ -20,13 +20,13 @@ export default function App() {
                 <CustomButton
                     title='Sign Up'
                     handlePress={() => router.push('/sign-up')}
-                    containerStyles='w-full mt-10'
+                    containerStyles='w-full mt-10 h-14'
                     textStyles='font-mbold'
                 />
                 <CustomButton
                     title='Sign In'
                     handlePress={() => router.push('/sign-in')}
-                    containerStyles='w-full mt-4 bg-secondary'
+                    containerStyles='w-full mt-4 bg-secondary h-14'
                     textStyles='font-mbold'
                 />
             </View>

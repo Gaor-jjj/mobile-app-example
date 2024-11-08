@@ -30,7 +30,8 @@ const SignUp = () => {
                 <CustomButton
                     title='Sign In'
                     handlePress={() => router.push('/home')}
-                    containerStyles='my-5'
+                    containerStyles='h-14 my-5'
+                    textStyles='font-mbold'
                 />
                 <Seperator text='Or sign in with'/>
                 <GoogleLogin handlePress={() => router.push('/home')}/>
