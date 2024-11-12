@@ -5,6 +5,7 @@ const ProfileLayout = () => {
     <Stack screenOptions={{ headerShown: false }}>
       <Stack.Screen name="index" options={{ title: 'Profile' }} />
       <Stack.Screen name="settings" options={{ title: 'Settings' }} />
+      <Stack.Screen name="createlisting" options={{ title: 'Create a new listing' }} />
     </Stack>
   );
 };

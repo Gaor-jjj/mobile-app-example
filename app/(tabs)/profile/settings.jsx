@@ -32,7 +32,7 @@ const Settings = () => {
     return (
         <SafeAreaView className="bg-white flex-1" edges={['top']}>
             <ScrollView 
-                contentContainerStyle={{ flexGrow: 1, paddingHorizontal: 16 }}
+                contentContainerStyle={{ flexGrow: 1, paddingHorizontal: 20 }}
                 className="mt-5"
             >
                 <Header

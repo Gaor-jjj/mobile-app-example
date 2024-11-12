@@ -24,7 +24,7 @@ const profile = () => {
         />
         <Text className="font-nbold mb-2 text-xl">Username</Text>
         <Text className="font-nregular text-sm text-gray-500">Email</Text>
-        <ListItem title="My Listings" subtitle={`Already have ${num} listings`}/>
+        <ListItem title="My Listings" subtitle={`Already have ${num} listings`} onPress={() => router.push('/profile/createlisting')}/>
         <ListItem title="Settings" subtitle="Account, FAQ, Contact" onPress={() => router.push('/(tabs)/profile/settings')}/>
         <CustomButton
           title="Add New Listing"
