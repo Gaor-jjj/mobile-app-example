@@ -28,9 +28,9 @@ const profile = () => {
         <ListItem title="Settings" subtitle="Account, FAQ, Contact" onPress={() => router.push('/(tabs)/profile/settings')}/>
         <CustomButton
           title="Add New Listing"
-          handlePress
           containerStyles="mt-auto mb-5 bg-primary h-14"
           textStyles="font-mbold"
+          handlePress={() => router.push('/profile/createlisting')}
         />
       </View>
     </SafeAreaView>
