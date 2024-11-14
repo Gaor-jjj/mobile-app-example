@@ -21,6 +21,7 @@ import table from '../assets/icons/table.png'
 import remove from '../assets/icons/remove.png'
 import forward_simple from '../assets/icons/forward_simple.png'
 import edit from '../assets/icons/edit.png'
+import down_simple from '../assets/icons/down_simple.png'
 
 export default {
     back,
@@ -45,5 +46,6 @@ export default {
     table,
     remove,
     forward_simple,
-    edit
+    edit,
+    down_simple
 }
