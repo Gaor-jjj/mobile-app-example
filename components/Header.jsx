@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 import React, { useState } from 'react'
-import icons from '../constants/icons'
-import InputField from './InputField'
+import icons from 'constants/icons'
+import InputField from 'components/InputField'
 
 const Header = ({ title, showBack, showLogout, showSearch, onBackPress, onLogoutPress, onSearchKeyword, keyword }) => {
   const [showSearchInput, setShowSearchInput] = useState(false)

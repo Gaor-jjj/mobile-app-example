@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import Header from '../../../components/Header'
-import ListItem from '../../../components/ListItem'
-import CustomButton from '../../../components/CustomButton'
+import Header from 'components/Header'
+import ListItem from 'components/ListItem'
+import CustomButton from 'components/CustomButton'
 import { useRouter } from 'expo-router'
-import { useGlobalContext } from '../../../context/GlobalProvider'
-import { signOut } from '../../../lib/appwrite'
+import { useGlobalContext } from 'context/GlobalProvider'
+import { signOut } from 'lib/appwrite'
 
 const profile = () => {
   const { user, setUser, setIsLoggedIn } = useGlobalContext();
@@ -30,7 +30,7 @@ const profile = () => {
         />
         <Text className="font-nbold mb-2 text-xl">Username</Text>
         <Text className="font-nregular text-sm text-gray-500">Email</Text>
-        <ListItem title="My Listings" subtitle={`Already have ${num} listings`} onPress={() => {}}/>
+        <ListItem title="My Listings" subtitle={`Already have ${num} listings`} onPress={() => router.push('/(tabs)/profile/mylisting')}/>
         <ListItem title="Settings" subtitle="Account, FAQ, Contact" onPress={() => router.push('/(tabs)/profile/settings')}/>
         <CustomButton
           title="Add New Listing"
