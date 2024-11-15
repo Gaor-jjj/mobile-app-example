@@ -21,6 +21,7 @@ const SignUp = () => {
     })
 
     const onSubmit = async () => {
+        console.log('Form Data:', form);
         if(!form.username || !form.email || !form.password) {
             Alert.alert('Error', 'Please fill in all the fields')
         }
