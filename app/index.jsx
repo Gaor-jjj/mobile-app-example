@@ -1,10 +1,15 @@
 import { Image, Text, View } from 'react-native';
-import { router } from 'expo-router'
+import { Redirect, router } from 'expo-router'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { images } from '../constants'
 import CustomButton from '../components/CustomButton';
+import { useGlobalContext } from '../context/GlobalProvider';
 
 export default function App() {
+  const {isLoading, isLoggedIn} = useGlobalContext;
+
+  if(!isLoading && isLoggedIn) return <Redirect href='/home'/>
+
   return (
     <SafeAreaView className="bg-white">
         <View className="w-full items-center justify-center h-full p-5">
@@ -20,13 +25,13 @@ export default function App() {
                 <CustomButton
                     title='Sign Up'
                     handlePress={() => router.push('/sign-up')}
-                    containerStyles='w-full mt-10'
+                    containerStyles='w-full mt-10 h-14'
                     textStyles='font-mbold'
                 />
                 <CustomButton
                     title='Sign In'
                     handlePress={() => router.push('/sign-in')}
-                    containerStyles='w-full mt-4 bg-secondary'
+                    containerStyles='w-full mt-4 bg-secondary h-14'
                     textStyles='font-mbold'
                 />
             </View>
