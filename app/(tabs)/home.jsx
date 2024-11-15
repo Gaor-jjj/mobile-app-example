@@ -1,10 +1,10 @@
 import { View, FlatList } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import Header from '../../components/Header'
-import CategoryList from '../../components/CategoryList'
-import products from '../../data/products'
-import ProductHomeItem from '../../components/ProductHomeItem'
+import Header from 'components/Header'
+import CategoryList from 'components/CategoryList'
+import products from 'data/products'
+import ProductHomeItem from 'components/ProductHomeItem'
 import { useRouter } from 'expo-router'
 
 const home = () => {

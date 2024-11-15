@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, Pressable, FlatList, Dimensions } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import CustomButton from '../../components/CustomButton';
-import { icons } from '../../constants'
+import CustomButton from 'components/CustomButton';
+import { icons } from 'constants'
 import { useRouter } from 'expo-router';
 import { Linking } from 'react-native';
 

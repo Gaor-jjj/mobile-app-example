@@ -1,15 +1,15 @@
 import { View, Text, ScrollView, Alert } from 'react-native'
 import React, { useState } from 'react'
-import AuthHeader from '../../components/AuthHeader'
+import AuthHeader from 'components/AuthHeader'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { router } from 'expo-router'
-import InputField from '../../components/InputField'
-import Checkbox from '../../components/Checkbox'
-import CustomButton from '../../components/CustomButton'
-import Seperator from '../../components/Seperator'
-import GoogleLogin from '../../components/GoogleLogin'
-import { createUser } from '../../lib/appwrite'
-import { useGlobalContext } from '../../context/GlobalProvider'
+import InputField from 'components/InputField'
+import Checkbox from 'components/Checkbox'
+import CustomButton from 'components/CustomButton'
+import Seperator from 'components/Seperator'
+import GoogleLogin from 'components/GoogleLogin'
+import { createUser } from 'lib/appwrite'
+import { useGlobalContext } from 'context/GlobalProvider'
 
 const SignUp = () => {
     const { setUser, setIsLoggedIn } = useGlobalContext();

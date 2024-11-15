@@ -1,6 +1,6 @@
 import { View, Text, Image, Pressable } from 'react-native'
 import React from 'react'
-import icons from '../constants/icons'
+import icons from 'constants/icons'
 
 const ProductHomeItem = ({ title, image, price, onPress, onRemove }) => {
   return (

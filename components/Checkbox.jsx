@@ -1,5 +1,5 @@
 import { View, Text, TouchableOpacity, Image } from 'react-native'
-import { icons } from '../constants'
+import { icons } from 'constants'
 
 const Checkbox = ({checked, onCheck}) => {
 

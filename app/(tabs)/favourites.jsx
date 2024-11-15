@@ -1,9 +1,9 @@
 import { View, FlatList } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import Header from '../../components/Header'
-import products from '../../data/products'
-import ProductHomeItem from '../../components/ProductFavoriteItem'
+import Header from 'components/Header'
+import products from 'data/products'
+import ProductHomeItem from 'components/ProductFavoriteItem'
 import { useRouter } from 'expo-router'
 
 const favorites = () => {

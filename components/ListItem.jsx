@@ -1,6 +1,6 @@
 import { View, Text, Image, Pressable } from 'react-native';
 import React from 'react';
-import { icons } from '../constants';
+import { icons } from 'constants';
 
 const ListItem = ({ title, subtitle, onPress }) => {
   return (

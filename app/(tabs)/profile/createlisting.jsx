@@ -1,12 +1,12 @@
 import { View, Text, Image, TouchableOpacity, ScrollView } from 'react-native';
 import React, { useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Header from '../../../components/Header';
+import Header from 'components/Header';
 import { useRouter } from 'expo-router';
-import { icons } from '../../../constants';
+import { icons } from 'constants';
 import * as ImagePicker from 'expo-image-picker';
-import InputField from '../../../components/InputField'; // Assuming this is the correct path
-import CustomButton from '../../../components/CustomButton'; // Assuming this is the correct path
+import InputField from 'components/InputField'; // Assuming this is the correct path
+import CustomButton from 'components/CustomButton'; // Assuming this is the correct path
 
 const CreateListing = () => {
     const router = useRouter();

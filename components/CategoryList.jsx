@@ -1,6 +1,6 @@
 import { View, Text, FlatList, TouchableOpacity, Image } from 'react-native'
 import React, { useState } from 'react'
-import categories from '../data/categories'
+import categories from 'data/categories'
 
 const CategoryList = ({ selectedCategory, setSelectedCategory }) => {
 

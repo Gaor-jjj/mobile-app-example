@@ -1,7 +1,7 @@
 import { View, Text, TextInput, Pressable, Image, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
-import icons from '../constants/icons';
-import categories from '../data/categories';
+import icons from 'constants/icons';
+import categories from 'data/categories';
 
 const InputField = ({ label, placeholder, isPassword, value, onChangeText, keyboardType = 'default', inputStyles = {}, isSelection = false }) => {
     const [isPasswordVisible, setIsPasswordVisible] = useState(false);
