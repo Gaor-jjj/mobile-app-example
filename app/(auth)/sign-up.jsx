@@ -24,9 +24,11 @@ const SignUp = () => {
         console.log('Form Data:', form);
         if(!form.username || !form.email || !form.password) {
             Alert.alert('Error', 'Please fill in all the fields')
+            return;
         }
         try {
-            const result = await createUser(form.email, form.password, form.username)
+            const result = await createUser(form.email, form.password, form.username);
+            if (!result) throw new Error('User creation failed');
             setUser(result)
             setIsLoggedIn(true)
             router.replace('/home')
